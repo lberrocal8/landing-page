@@ -1,0 +1,163 @@
+body {
+    font-family: 'Source sans pro', sans-serif;
+    text-align: center;
+}
+
+#header-img {
+    position: fixed;
+    left: 50px;
+    top: 10px;
+    z-index: 2;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.title-section {
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    column-gap: 15px;
+}
+
+.grid-item {
+    display: inline;
+    border: 0;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#div-video {
+    text-align: center;
+}
+
+.title-pricing,
+.price-pricing,
+.content-pricing,
+.btn-pricing {
+    padding: 2px;
+    margin: 2px;
+}
+
+.content-pricing {
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.btn-pricing {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-p {
+    border: 0;
+    border-radius: 2px;
+    padding: 10px auto;
+    margin: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: #FFC300;
+    font-family: 'Source sans pro', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#email {
+    width: 40%;
+    border: 0;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Source sans pro', sans-serif;
+}
+
+#submit {
+    border: 0;
+    border-radius: 2px;
+    padding: 10px;
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Source sans pro', sans-serif;
+    background-color: #FFC300;
+}
+
+.btn-p:hover,
+#submit:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgba(38, 50, 56, 0.9);
+    color: #E0E0E0;
+}
+
+#div-footer {
+    display: flex;
+    justify-content: center;
+}
+
+#div-footer>div {
+    width: 130px;
+    margin: 10px 5px;
+    margin-bottom: 2px;
+    padding: 10px auto;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+#div-footer>div>a {
+    text-decoration: none;
+    color: #E0E0E0;
+}
+
+#copy {
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+/*Cuando la pantalla tenga 800px o menos de tamaño, se activa esta media query*/
+
+@media only screen and (max-width: 800px) {
+    .btn-p,
+    #submit {
+        background-color: #81D4FA;
+    }
+}
